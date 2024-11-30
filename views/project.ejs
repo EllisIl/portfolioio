@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= project.name %> - Project Details</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="project-page">
+    <h2><%= project.name %> Details</h2>
+    <p><%= project.description %></p>
+    <a href="<%= project.url %>" target="_blank">View on GitHub</a>
+    
+    <div class="back-link">
+      <a href="/?username=<%= username %>">Back to homepage</a>
+    </div>
+  </div>
+</body>
+</html>

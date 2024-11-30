@@ -1,0 +1,18 @@
+{
+  "name": "portfolioio",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": ["portfolio", "ejs", "node", "npm", "github", "github-api"],
+  "author": "Elijah Foard",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.7.8",
+    "body-parser": "^1.20.3",
+    "ejs": "^3.1.10",
+    "express": "^4.21.1"
+  }
+}

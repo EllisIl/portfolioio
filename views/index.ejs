@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <h1>GitHub Portfolio for <%= username %></h1>
+  <form method="GET" action="/">
+    <input type="text" name="username" value="<%= username %>" placeholder="GitHub Username">
+    <input type="text" name="search" value="<%= searchQuery %>" placeholder="Search projects...">
+    <button type="submit">Search</button>
+  </form>
+  <ul>
+    <% projects.forEach(project => { %>
+      <li>
+        <a href="/project/<%= project.id %>?username=<%= username %>"><%= project.name %></a>
+        <p><%= project.description %></p>
+      </li>
+    <% }); %>
+  </ul>
+  <a href="/contact">Contact</a>
+
+</body>
+</html>
